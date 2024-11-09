@@ -6,7 +6,7 @@
 
 ## Project Structure
 
-# HDP-SC/
+HDP-SC/
 ├── README.md
 ├── LICENSE
 ├── data/
