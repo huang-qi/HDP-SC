@@ -6,14 +6,14 @@
 
 ## Project Structure
 
-HDP-SC/
+# HDP-SC/
 ├── README.md
 ├── LICENSE
-├── data
-│   ├── AA
+├── data/
+│   ├── AA/
 │   │   ├── AA.data
 │   │   └── AA.lammpstrj
-│   ├── CG
+│   ├── CG/
 │   │   ├── atom_types.npy
 │   │   ├── box.npy
 │   │   ├── build.json
@@ -23,29 +23,29 @@ HDP-SC/
 │   │   ├── pos.npy
 │   │   ├── prior.json
 │   │   └── structure.psf
-│   └── DP
+│   └── DP/
 │       ├── input.json
-│       ├── training_data
-│       │   ├── set.000
+│       ├── training_data/
+│       │   ├── set.000/
 │       │   │   ├── box.npy
 │       │   │   ├── coord.npy
 │       │   │   └── force.npy
 │       │   └── type.raw
-│       └── validation_data
-│           ├── set.000
+│       └── validation_data/
+│           ├── set.000/
 │           │   ├── box.npy
 │           │   ├── coord.npy
 │           │   └── force.npy
 │           └── type.raw
-├── model
+├── model/
 │   └── graph.pb
-└── scripts
+└── scripts/
     ├── do_cg_map.ipynb
     ├── model_train.ipynb
     ├── prior_fit.ipynb
     ├── rdf_analysis.ipynb
     └── utils.py
-
+    
 ##  Guide
 
 1. **CG Mapping**
