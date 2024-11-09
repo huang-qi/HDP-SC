@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**HDP-SC** is a project designed for building a coarse-grained potential for polymer. 
+**HDP-SC** is a project designed for building coarse-grained potentials for polymer. 
 
 ## Project Structure
 ```
