@@ -1,0 +1,99 @@
+{
+  "_comment1": "model parameters",
+  "model": {
+      "type_map": [
+          "0",
+          "1"
+      ],
+      "type_embedding": {
+          "neuron": [8]
+      },
+      "descriptor": {
+          "type": "hybrid",
+          "list": [
+              {
+                  "type": "se_atten",
+                  "sel": "auto",
+                  "rcut_smth": 0.5,
+                  "rcut": 6,
+                  "neuron": [
+                      32,
+                      64,
+                      128
+                  ],
+                  "resnet_dt": false,
+                  "precision": "float64",
+                  "seed": 1,
+                  "_comment2": "that's all"
+              },
+              {
+                  "type": "se_e2_r",
+                  "sel": "auto",
+                  "rcut_smth": 0.5,
+                  "rcut": 16,
+                  "neuron": [
+                     32,
+                     64,
+                     128
+                  ],
+                  "resnet_dt": false,
+                  "precision": "float64",
+                  "seed": 1,
+                  "_comment2": "that's all"
+              }
+          ]
+      },
+      "fitting_net": {
+          "neuron": [
+              256,
+              256,
+              256
+          ],
+          "resnet_dt": true,
+          "precision": "float64",
+          "seed": 1,
+          "_comment3": "that's all"
+      },
+      "_comment4": "that's all"
+  },
+  "learning_rate": {
+      "type": "exp",
+      "decay_steps": 1000,
+      "start_lr": 0.001,
+      "stop_lr": 3.51e-08,
+      "_comment5": "that's all"
+  },
+  "loss": {
+      "type": "ener",
+      "start_pref_e": 0,
+      "limit_pref_e": 0,
+      "start_pref_f": 1,
+      "limit_pref_f": 1,
+      "start_pref_v": 0,
+      "limit_pref_v": 0,
+      "_comment6": "that's all"
+  },
+  "training": {
+      "training_data": {
+          "systems": [
+              "training_data"
+          ],
+          "batch_size": 4,
+          "_comment7": "that's all"
+      },
+      "validation_data": {
+          "systems": [
+              "validation_data"
+          ],
+          "batch_size": 4,
+          "_comment8": "that's all"
+      },
+      "numb_steps": 100000,
+      "seed": 10,
+      "disp_file": "lcurve.out",
+      "disp_freq": 100,
+      "save_freq": 1000,
+      "_comment9": "that's all"
+  },
+  "_comment10": "that's all"
+}

@@ -1,0 +1,13 @@
+{
+    "build_smiles": "c1ccccc1C([*])C([*])",
+    "build_degree": 60,
+    "build_number": 16,
+    "num_atoms_for_smiles": 16,
+    "mol_mass": 104.15199999999994,
+    "id_for_bead_A": [7,8,14,15,16],
+    "id_for_bead_B": [1,2,3,4,5,6,9,10,11,12,13],
+    "mass_A": 28.054,
+    "mass_B": 77.106,
+    "index_for_backbone_A": [0],
+    "index_for_backbone_B": [5]
+}
