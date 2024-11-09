@@ -4,6 +4,8 @@
 
 **HDP-SC** is a project designed for building a coarse-grained potential for polymer. 
 
+## Project Structure
+
 HDP-SC/
 ├── README.md
 ├── LICENSE
