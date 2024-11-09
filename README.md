@@ -5,47 +5,48 @@
 **HDP-SC** is a project designed for building a coarse-grained potential for polymer. 
 
 ## Project Structure
+```
+HDP-SC/
+├── README.md
+├── LICENSE
+├── data/
+│   ├── AA/
+│   │   ├── AA.data
+│   │   └── AA.lammpstrj
+│   ├── CG/
+│   │   ├── atom_types.npy
+│   │   ├── box.npy
+│   │   ├── build.json
+│   │   ├── CG.data
+│   │   ├── CG.lammpstrj
+│   │   ├── force.npy
+│   │   ├── pos.npy
+│   │   ├── prior.json
+│   │   └── structure.psf
+│   └── DP/
+│       ├── input.json
+│       ├── training_data/
+│       │   ├── set.000/
+│       │   │   ├── box.npy
+│       │   │   ├── coord.npy
+│       │   │   └── force.npy
+│       │   └── type.raw
+│       └── validation_data/
+│           ├── set.000/
+│           │   ├── box.npy
+│           │   ├── coord.npy
+│           │   └── force.npy
+│           └── type.raw
+├── model/
+│   └── graph.pb
+└── scripts/
+    ├── do_cg_map.ipynb
+    ├── model_train.ipynb
+    ├── prior_fit.ipynb
+    ├── rdf_analysis.ipynb
+    └── utils.py
+```
 
-# HDP-SC/
-├── README.md \
-├── LICENSE \
-├── data/ \
-│   ├── AA/ \
-│   │   ├── AA.data \
-│   │   └── AA.lammpstrj \
-│   ├── CG/ \
-│   │   ├── atom_types.npy \
-│   │   ├── box.npy \
-│   │   ├── build.json \
-│   │   ├── CG.data \
-│   │   ├── CG.lammpstrj \
-│   │   ├── force.npy \
-│   │   ├── pos.npy \
-│   │   ├── prior.json \
-│   │   └── structure.psf \
-│   └── DP/ \
-│       ├── input.json \
-│       ├── training_data/ \
-│       │   ├── set.000/ \
-│       │   │   ├── box.npy \
-│       │   │   ├── coord.npy \
-│       │   │   └── force.npy \
-│       │   └── type.raw \
-│       └── validation_data/ \
-│           ├── set.000/ \
-│           │   ├── box.npy \
-│           │   ├── coord.npy \
-│           │   └── force.npy \
-│           └── type.raw \
-├── model/ \
-│   └── graph.pb \
-└── scripts/ \
-    ├── do_cg_map.ipynb \
-    ├── model_train.ipynb \
-    ├── prior_fit.ipynb \
-    ├── rdf_analysis.ipynb \
-    └── utils.py \
-    
 ##  Guide
 
 1. **CG Mapping**
